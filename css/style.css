@@ -12,5 +12,55 @@ a { outline: 0; }
 .dark-transparent { background-color: rgba(25, 25, 25, 0.7); }
 .banner { height: 100vh; perspective: 1000px; display: flex; align-items: center; justify-content: center; }
 @keyframes rotation { 0% {transform: rotate3d(0, 1, 0, 0deg);} 50% {transform: rotate3d(0, 1, 0, 180deg);} 100% {transform: rotate3d(0, 1, 0, 360deg);}}
-.coin { max-height: 350px; max-width: 350px; animation-name: rotation; animation-iteration-count: infinite; animation-timing-function: linear; animation-duration: 5s; transform: rotateY(0deg); transform-style: preserve-3d; }
+.coin { height: 350px; width: 350px; animation-name: rotation; animation-iteration-count: infinite; animation-timing-function: linear; animation-duration: 5s; transform: rotateY(0deg); transform-style: preserve-3d; outline: 1px solid transparent; }
 
+.coin2 {    
+    position: relative;
+    width: 250px;
+    height: 250px;
+    animation-name: rotation; animation-iteration-count: infinite; animation-timing-function: linear; animation-duration: 7s; transform: rotateY(0deg); transform-style: preserve-3d; outline: 1px solid transparent;
+}
+
+.coin2:after {
+    bottom: 0;
+    content: '';
+    left: 110px;
+    position: absolute;
+    top: 0;
+    width: 10px;    
+    transform: rotateY(-90deg);
+    transform-origin: 100% 50%;
+    background-color: #76FF03;
+}
+
+.front, .back {
+  background-image: url("../img/defcon_logo.png");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.back {
+   position: absolute;
+   top: 0;   
+   transform: translateZ(-10px) rotateY(-180deg);
+}
+
+.front_inner, .back_inner {
+    border-radius: 50%; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #76FF03;
+}
+
+.front_inner {       
+    transform: translateZ(-2px);
+}
+
+.back_inner {
+    transform: translateZ(-8px);
+}
