@@ -10,25 +10,7 @@ a { outline: 0; }
 .mid { display: flex; align-items: center; justify-content: center; }
 .fix { padding-top: 120px; }
 .dark-transparent { background-color: rgba(25, 25, 25, 0.7); }
-.banner { height: 100vh; position: relative; perspective: 1000px; }
+.banner { height: 100vh; perspective: 1000px; display: flex; align-items: center; justify-content: center; }
+@keyframes rotation { 0% {transform: rotate3d(0, 1, 0, 0deg);} 50% {transform: rotate3d(0, 1, 0, 180deg);} 100% {transform: rotate3d(0, 1, 0, 360deg);}}
+.coin { max-height: 350px; max-width: 350px; animation-name: rotation; animation-iteration-count: infinite; animation-timing-function: linear; animation-duration: 5s; transform: rotateY(0deg); transform-style: preserve-3d; }
 
-@keyframes rotation {
-  0% {
-    transform: rotate3d(0, 1, 0, 0deg);
-  }
-  50% {
-    transform: rotate3d(0, 1, 0, 180deg);
-  }
-  100% {
-    transform: rotate3d(0, 1, 0, 360deg);
-  }
-}
-
-.coin { height: 350px; width: 350px; position: absolute; top: 25%; left: 41%; 
-	animation-name: rotation;
-  	animation-iteration-count: infinite;
-  	animation-timing-function: linear;
-  	animation-duration: 5s;
-  	transform: rotateY(0deg);
-  	transform-style: preserve-3d;
-  }
