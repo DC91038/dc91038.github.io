@@ -1,0 +1,34 @@
+html { scroll-behavior: smooth; height: 100%; }
+body { background-color: #000000; }
+a { outline: 0; }
+.cover { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1999; background-color: #000000; }
+#particles-js { position: fixed; width: 100%; height: 100%; z-index: -10; }
+.container-margin { margin-top: 80px; margin-bottom: 80px; }
+.container-margin-2 { margin-top: 140px; margin-bottom: 40px; }
+.red-hover:hover { box-shadow: 0 0px 30px rgba(255,0,0,1); transition: box-shadow 0.1s ease-in-out; }
+.bgap { margin-bottom: 40px; }
+.mid { display: flex; align-items: center; justify-content: center; }
+.fix { padding-top: 120px; }
+.dark-transparent { background-color: rgba(25, 25, 25, 0.7); }
+.banner { height: 100vh; position: relative; perspective: 1000px; }
+
+@keyframes rotation {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+.coin { height: 350px; width: 350px; position: absolute; top: 25%; left: 41%; 
+	animation-name: rotation;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-duration: 5s;
+  	transform: rotateY(0deg);
+  	transform-style: preserve-3d;
+  }
