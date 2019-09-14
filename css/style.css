@@ -169,7 +169,7 @@ body::before {
 
 .icon { margin: 20px; color: #76FF03; }
 .term-green { color: #76FF03; text-shadow: 0px 0px 5px #76FF03; }
-.green-outline { background-color: #212121; box-shadow: 0 0 10px rgba(0,255,0,1); }
+.green-outline { box-shadow: 0 0 10px rgba(0,255,0,1); }
 .profile-card { display: flex; justify-content: center; }
 .profile-img { border-radius: 50%; width: 150px; height: 150px; }
 .profile-name { color: #76FF03; font-weight: 700; margin: 10px; }
