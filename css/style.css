@@ -1,5 +1,5 @@
 html { height: 100vh; scroll-behavior: smooth; }
-body { height: 100vh; background: #212121; animation: textShadow 1.6s infinite; font-family: monospace; }
+body { height: 100vh; background-color: #212121; background-image: url('../img/map.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; animation: textShadow 1.6s infinite; font-family: monospace; }
 body::-webkit-scrollbar { width: 10px; }
 body::-webkit-scrollbar-track { background: #212121; }
 body::-webkit-scrollbar-thumb { background: #76FF03; }
