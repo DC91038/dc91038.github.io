@@ -173,3 +173,4 @@ body::before {
 .profile-card { display: flex; justify-content: center; }
 .profile-img { border-radius: 50%; width: 150px; height: 150px; }
 .profile-name { color: #76FF03; font-weight: 700; margin: 10px; }
+.tagline { position: absolute; bottom: 120px; }
