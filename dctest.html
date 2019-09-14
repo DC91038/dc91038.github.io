@@ -4,6 +4,7 @@
 	<title>DEF CON 911337</title>
 	<meta name="theme-color" content="#212121">
 	<meta name="application-name" content="DC911337"/>
+	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="msapplication-TileColor" content="#212121" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -45,7 +46,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 	
 	<link rel="stylesheet" href="../css/pace-theme-center-simple.min.css">
-	<script async src="../js/pace.min.js"></script>
+	<script src="../js/pace.min.js"></script>
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/mdb.min.css">
 	<link rel="stylesheet" href="../css/all.min.css">
@@ -54,16 +55,17 @@
 </head>
 <body>
 	<div class="cover"></div>
-	<div id="particles-js"></div>
+	<!--<div id="particles-js"></div>-->
+	<div class="faux-terminal"></div>
 
 	<div class="banner">
-		<!--<img class="coin img-fluid" src="../img/defcon_logo.png">-->
-		<div class="coin2">
+		<div class="coin">
 			<div class="front_inner"></div>
 			<div class="back_inner"></div>
 			<div class="front"></div>
 			<div class="back"></div>
 		</div>
+		<span style="bottom: 100px; position: absolute; font-size: 60px; color: #76FF03;">welcome!</span>
 	</div>
 
 	<div class="container container-margin">
@@ -105,7 +107,7 @@
 	<script src="../js/mdb.min.js"></script>
 	<script src="../js/popper.min.js"></script>
 	<script src="../js/particles.min.js"></script>
-	<script>particlesJS.load('particles-js', '/js/particles.json', function() { console.log('callback - particles.js config loaded'); });</script>
+	<!--<script>particlesJS.load('particles-js', '/js/particles.json', function() { console.log('callback - particles.js config loaded'); });</script>-->
 	<script>
 		Pace.on("done", function(){
 		    $(".cover").fadeOut(1000);
