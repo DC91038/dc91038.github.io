@@ -174,3 +174,5 @@ body::before {
 .profile-img { border-radius: 50%; width: 150px; height: 150px; }
 .profile-name { color: #76FF03; font-weight: 700; margin: 10px; }
 .tagline { position: absolute; bottom: 120px; }
+.social-card { height: 565px; width: 100%; }
+.twitter-timeline { height: 565px !important; width: 100% !important; }
