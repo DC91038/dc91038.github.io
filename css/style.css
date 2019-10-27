@@ -179,4 +179,6 @@ body::before {
 .true-center { display: flex; align-items: center; justify-content: center; }
 .twitter-timeline { background-color: rgba(25, 25, 25, 0.7) !important; box-shadow: 0 0 10px rgba(0,255,0,1); border-radius: 0px; }
 .green-btn { background-color: #76FF03; color: #000000; font-weight: 700; font-size: 16px; }
-.grid-item { width: 432px; height: auto; object-fit: cover; margin-top: 10px; margin-bottom: 10px;}
+.grid-item { object-fit: cover; margin-bottom: 20px;}
+.wall-card { height: 320px; width: 100%; background: url('../img/wallpapers/dc911337_4.png') no-repeat center center fixed; object-fit: cover; }
+h6 { font-size: 20px; }

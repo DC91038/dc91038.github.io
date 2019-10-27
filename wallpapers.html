@@ -40,17 +40,17 @@
 	<meta name="msapplication-TileColor" content="#00a300">
 	<meta name="msapplication-config" content="../browserconfig.xml">
 	
-	<link rel="stylesheet" href="../css/pace-theme-center-simple.min.css">
-	<script src="../js/pace.min.js"></script>
+	<!--<link rel="stylesheet" href="../css/pace-theme-center-simple.min.css">
+	<script src="../js/pace.min.js"></script>-->
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/mdb.min.css">
 	<link rel="stylesheet" href="../css/all.min.css">
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<div class="cover"></div>
+	<!--<div class="cover"></div>-->
 
-	<header class="container-margin">
+	<header onclick="location.href='https://dc911337.org'"; style="cursor: pointer;" class="container-margin">
 <pre class="ascii-font d-flex justify-content-center">
 d8888b.    .o88b.   .d888b.    db    db   d8888b.   d8888b.   d88888D 
 88  `8D   d8P  Y8   88' `8D   o88   o88   VP  `8D   VP  `8D   VP  d8' 
@@ -66,22 +66,22 @@ Y8888D'    `Y88P'    d8'       VP    VP   Y8888P'   Y8888P'   d8'
 		<div class="col d-flex justify-content-center">
 			<div class="grid">
 				<a href="../img/wallpapers/dc911337_1.png" download>
-					<img class="grid-item green-outline img-fluid" src="../img/wallpapers/dc911337_1.png">
+					<img style="width: 432px; height: 243px;" class="lazyload grid-item green-outline img-fluid" src="../img/wallpapers/dc911337_1.png" srcset="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAbAAAAABCAQAAAAVpjPFAAAAEUlEQVR42mNkGAWjYBTQDAAABsIAAvM1Rn8AAAAASUVORK5CYII=" data-srcset="../img/wallpapers/dc911337_1.png">
 				</a>
 				<a href="../img/wallpapers/dc911337_2.png" download>
-			    	<img class="grid-item green-outline img-fluid" src="../img/wallpapers/dc911337_2.png">
+			    	<img style="width: 432px; height: 243px;" class="lazyload grid-item green-outline img-fluid" src="../img/wallpapers/dc911337_2.png" srcset="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAbAAAAABCAQAAAAVpjPFAAAAEUlEQVR42mNkGAWjYBTQDAAABsIAAvM1Rn8AAAAASUVORK5CYII=" data-srcset="../img/wallpapers/dc911337_2.png">
 			    </a>
 			    <a href="../img/wallpapers/dc911337_3.png" download>
-			    	<img class="grid-item green-outline img-fluid" src="../img/wallpapers/dc911337_3.png">
+			    	<img style="width: 432px; height: 243px;" class="lazyload grid-item green-outline img-fluid" src="../img/wallpapers/dc911337_3.png" srcset="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAbAAAAABCAQAAAAVpjPFAAAAEUlEQVR42mNkGAWjYBTQDAAABsIAAvM1Rn8AAAAASUVORK5CYII=" data-srcset="../img/wallpapers/dc911337_3.png">
 			    </a>
 			    <a href="../img/wallpapers/dc911337_4.png" download>
-			    	<img class="grid-item green-outline img-fluid" src="../img/wallpapers/dc911337_4.png">
+			    	<img style="width: 432px; height: 243px;" class="lazyload grid-item green-outline img-fluid" src="../img/wallpapers/dc911337_4.png" srcset="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAbAAAAABCAQAAAAVpjPFAAAAEUlEQVR42mNkGAWjYBTQDAAABsIAAvM1Rn8AAAAASUVORK5CYII=" data-srcset="../img/wallpapers/dc911337_4.png">
 			    </a>
 			    <a href="../img/wallpapers/dc911337_5.png" download>
-			    	<img class="grid-item green-outline img-fluid" src="../img/wallpapers/dc911337_5.png">
+			    	<img style="width: 432px; height: 243px;" class="lazyload grid-item green-outline img-fluid" src="../img/wallpapers/dc911337_5.png" srcset="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAbAAAAABCAQAAAAVpjPFAAAAEUlEQVR42mNkGAWjYBTQDAAABsIAAvM1Rn8AAAAASUVORK5CYII=" data-srcset="../img/wallpapers/dc911337_5.png">
 			    </a>
 			    <a href="../img/wallpapers/dc911337_6.png" download>	
-			    	<img class="grid-item green-outline img-fluid" src="../img/wallpapers/dc911337_6.png">
+			    	<img style="width: 432px; height: 243px;" class="lazyload grid-item green-outline img-fluid" src="../img/wallpapers/dc911337_6.png" srcset="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAbAAAAABCAQAAAAVpjPFAAAAEUlEQVR42mNkGAWjYBTQDAAABsIAAvM1Rn8AAAAASUVORK5CYII=" data-srcset="../img/wallpapers/dc911337_6.png">
 				</a>
 			</div>
 		</div>
@@ -120,24 +120,26 @@ Y8888D'    `Y88P'    d8'       VP    VP   Y8888P'   Y8888P'   d8'
 	<script src="../js/jquery-3.4.1.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/mdb.min.js"></script>
+	<script src="../js/lazysizes.min.js" async=""></script>
 	<script src="../js/masonry.pkgd.min.js"></script>
 	<script src="../js/imagesloaded.pkgd.min.js"></script>
 	<script>
 		var $grid = $('.grid').masonry({
 			itemSelector: '.grid-item',
-		 	columnWidth: 215,
-        	gutter: 10,
+		 	columnWidth: '.grid-item',
+        	gutter: 18,
         	horizontalOrder: true,
         	fitWidth: true
 		});
 		$grid.imagesLoaded().progress( function() {
   			$grid.masonry('layout');
 		});
+		
 	</script>
-	<script>
+	<!--<script>
 		Pace.on("done", function(){
 		    $(".cover").fadeOut(1000);
 		});
-    </script>
+    </script>-->
 </body>
 </html>
